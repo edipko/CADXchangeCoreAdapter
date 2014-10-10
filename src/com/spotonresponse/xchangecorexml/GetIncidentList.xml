@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+<soapenv:Header xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"/>
+<soapenv:Body xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+<dir:GetIncidentListRequest xmlns:dir="http://uicds.org/IncidentManagementService"/>
+</soapenv:Body>
+</soapenv:Envelope>

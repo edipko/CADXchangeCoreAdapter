@@ -1,0 +1,226 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP-ENV:Header />
+	<SOAP-ENV:Body>
+		<str:CloseProductRequest xmlns:str="http://uicds.org/WorkProductService">
+			<str:WorkProductIdentification>
+				<base:Identifier xmlns:base="http://www.saic.com/precis/2009/06/base">SOI-23c44ef7-0e70-4b80-8ab8-98295a6a4219
+				</base:Identifier>
+				<base:Version xmlns:base="http://www.saic.com/precis/2009/06/base">1</base:Version>
+				<base:Type xmlns:base="http://www.saic.com/precis/2009/06/base">SOI</base:Type>
+				<base:Checksum xmlns:base="http://www.saic.com/precis/2009/06/base">Sat Jan 05 20:38:44 UTC
+					2013:1:0:1588475897
+				</base:Checksum>
+				<base:State xmlns:base="http://www.saic.com/precis/2009/06/base">Active</base:State>
+			</str:WorkProductIdentification>
+		</str:CloseProductRequest>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header />
+	<soapenv:Body>
+		<wp:CloseProductRequest
+			xsi:schemaLocation="http://uicds.org/WorkProductService WorkProductService.xsd"
+			xmlns:wp="http://uicds.org/WorkProductService" xmlns:precisb="http://www.saic.com/precis/2009/06/base"
+			xmlns:preciss="http://www.saic.com/precis/2009/06/structures"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<preciss:WorkProductIdentification>
+				<precisb:Identifier xmlns:base="http://www.saic.com/precis/2009/06/base">SOI
+				</precisb:Identifier>
+				<precisb:Version xmlns:base="http://www.saic.com/precis/2009/06/base">1</precisb:Version>
+				<precisb:Type xmlns:base="http://www.saic.com/precis/2009/06/base">SOI</precisb:Type>
+				<precisb:Checksum xmlns:base="http://www.saic.com/precis/2009/06/base">CHECKSUM</precisb:Checksum>
+				<precisb:State xmlns:base="http://www.saic.com/precis/2009/06/base">Active</precisb:State>
+			</preciss:WorkProductIdentification>
+		</wp:CloseProductRequest>
+	</soapenv:Body>
+</soapenv:Envelope>
+
+
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP-ENV:Header />
+	<SOAP-ENV:Body>
+		<wor:CloseProductResponse xmlns:wor="http://uicds.org/WorkProductService">
+			<wor:WorkProductPublicationResponse>
+				<str:WorkProductProcessingStatus
+					xmlns:str="http://www.saic.com/precis/2009/06/structures">
+					<base:Status xmlns:base="http://www.saic.com/precis/2009/06/base">Rejected</base:Status>
+					<base:Message xmlns:base="http://www.saic.com/precis/2009/06/base">No work product identifier
+						specified
+					</base:Message>
+				</str:WorkProductProcessingStatus>
+			</wor:WorkProductPublicationResponse>
+		</wor:CloseProductResponse>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP-ENV:Header />
+	<SOAP-ENV:Body>
+		<wor:GetProductResponse xmlns:wor="http://uicds.org/WorkProductService">
+			<str:WorkProduct xmlns:str="http://www.saic.com/precis/2009/06/structures">
+				<ulex:PackageMetadata xmlns:ulex="ulex:message:structure:1.0">
+					<ulex:DataItemID>SOI-23c44ef7-0e70-4b80-8ab8-98295a6a4219
+					</ulex:DataItemID>
+					<ulex:DataItemReferenceID>SOI-23c44ef7-0e70-4b80-8ab8-98295a6a4219
+					</ulex:DataItemReferenceID>
+					<ns:DataItemStatus xmlns:ns="http://ucore.gov/ucore/2.0"
+						ns:code="Active" ns:codespace="http://uicds.org/1.0/codespace/workproduct/status"
+						ns:label="UICDS Work Product Status" />
+					<ulex:DataOwnerMetadata>
+						<ns:DataOwnerIdentifier xmlns:ns="http://ucore.gov/ucore/2.0">
+							<ns1:Organization xmlns:ns1="http://metadata.dod.mil/mdr/ns/DDMS/2.0/">
+								<ns1:name>ucids.org</ns1:name>
+							</ns1:Organization>
+						</ns:DataOwnerIdentifier>
+						<ns:DataOwnerContact xmlns:ns="http://ucore.gov/ucore/2.0">
+							<ns1:Organization xmlns:ns1="http://metadata.dod.mil/mdr/ns/DDMS/2.0/">
+								<ns1:name>http://uicds.us</ns1:name>
+							</ns1:Organization>
+						</ns:DataOwnerContact>
+						<ulex:DataOwnerMetadataDomainAttribute>
+							<ulex:DomainName>UICDS EM Domain</ulex:DomainName>
+						</ulex:DataOwnerMetadataDomainAttribute>
+					</ulex:DataOwnerMetadata>
+					<ns:DisseminationCriteria xmlns:ns="http://ucore.gov/ucore/2.0" />
+					<str:WorkProductIdentification>
+						<base:Identifier xmlns:base="http://www.saic.com/precis/2009/06/base">SOI-23c44ef7-0e70-4b80-8ab8-98295a6a4219
+						</base:Identifier>
+						<base:Version xmlns:base="http://www.saic.com/precis/2009/06/base">1</base:Version>
+						<base:Type xmlns:base="http://www.saic.com/precis/2009/06/base">SOI</base:Type>
+						<base:Checksum xmlns:base="http://www.saic.com/precis/2009/06/base">Sat Jan 05 20:38:44 UTC
+							2013:1:0:1588475897
+						</base:Checksum>
+						<base:State xmlns:base="http://www.saic.com/precis/2009/06/base">Active</base:State>
+					</str:WorkProductIdentification>
+					<str:WorkProductProperties>
+						<base:Created xmlns:base="http://www.saic.com/precis/2009/06/base">2013-01-05T20:38:44.762+00:00
+						</base:Created>
+						<base:CreatedBy xmlns:base="http://www.saic.com/precis/2009/06/base">dipkoe@rs1
+						</base:CreatedBy>
+						<base:LastUpdated xmlns:base="http://www.saic.com/precis/2009/06/base">2013-01-05T20:38:44.762+00:00
+						</base:LastUpdated>
+						<base:LastUpdatedBy xmlns:base="http://www.saic.com/precis/2009/06/base">dipkoe@rs1
+						</base:LastUpdatedBy>
+						<base:Kilobytes xmlns:base="http://www.saic.com/precis/2009/06/base">0</base:Kilobytes>
+						<base:MimeType xmlns:base="http://www.saic.com/precis/2009/06/base">application/uicds+xml
+						</base:MimeType>
+						<base:AssociatedGroups xmlns:base="http://www.saic.com/precis/2009/06/base">
+							<base:Identifier>IG-256bd492-96d1-481e-a450-931f03b6fe4f
+							</base:Identifier>
+						</base:AssociatedGroups>
+					</str:WorkProductProperties>
+				</ulex:PackageMetadata>
+				<ns:Digest xmlns:ns="http://ucore.gov/ucore/2.0"
+					xmlns:ucoregml="http://www.opengis.net/gml/3.2" xmlns:ns1="http://niem.gov/niem/niem-core/2.0"
+					xmlns:tns="http://uicds.org/SensorService" xmlns:have="urn:oasis:names:tc:emergency:EDXL:HAVE:1.0"
+					xmlns:ddms="http://metadata.dod.mil/mdr/ns/DDMS/2.0/"
+					xmlns:geo-oasis="urn:oasis:names:tc:emergency:EDXL:HAVE:1.0:geo-oasis"
+					xmlns:base="http://www.saic.com/precis/2009/06/base" xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3"
+					xmlns:gml="http://www.opengis.net/gml" xmlns:sen="http://uicds.org/SensorService"
+					xmlns:ulex="ulex:message:structure:1.0">
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header/>
+    <SOAP-ENV:Body>
+        <sen:CreateSOIResponse xmlns:sen="http://uicds.org/SensorService">
+            <wor:WorkProductPublicationResponse xmlns:wor="http://uicds.org/WorkProductService">
+                <str:WorkProductProcessingStatus xmlns:str="http://www.saic.com/precis/2009/06/structures">
+                    <base:Status xmlns:base="http://www.saic.com/precis/2009/06/base">Accepted</base:Status>
+                </str:WorkProductProcessingStatus>
+                <str:WorkProduct xmlns:str="http://www.saic.com/precis/2009/06/structures">
+                    <ulex:PackageMetadata xmlns:ulex="ulex:message:structure:1.0">
+                        <ulex:DataItemID>SOI-3f9daf44-7f9a-448d-84b8-cde0c6614581</ulex:DataItemID>
+                        <ulex:DataItemReferenceID>SOI-3f9daf44-7f9a-448d-84b8-cde0c6614581</ulex:DataItemReferenceID>
+                        <ns:DataItemStatus xmlns:ns="http://ucore.gov/ucore/2.0" ns:code="Active" ns:codespace="http://uicds.org/1.0/codespace/workproduct/status" ns:label="UICDS Work Product Status"/>
+                        <ulex:DataOwnerMetadata>
+                            <ns:DataOwnerIdentifier xmlns:ns="http://ucore.gov/ucore/2.0">
+                                <ns1:Organization xmlns:ns1="http://metadata.dod.mil/mdr/ns/DDMS/2.0/">
+                                    <ns1:name>ucids.org</ns1:name>
+                                </ns1:Organization>
+                            </ns:DataOwnerIdentifier>
+                            <ns:DataOwnerContact xmlns:ns="http://ucore.gov/ucore/2.0">
+                                <ns1:Organization xmlns:ns1="http://metadata.dod.mil/mdr/ns/DDMS/2.0/">
+                                    <ns1:name>http://uicds.us</ns1:name>
+                                </ns1:Organization>
+                            </ns:DataOwnerContact>
+                            <ulex:DataOwnerMetadataDomainAttribute>
+                                <ulex:DomainName>UICDS EM Domain</ulex:DomainName>
+                            </ulex:DataOwnerMetadataDomainAttribute>
+                        </ulex:DataOwnerMetadata>
+                        <ns:DisseminationCriteria xmlns:ns="http://ucore.gov/ucore/2.0"/>
+                        <str:WorkProductIdentification>
+                            <base:Identifier xmlns:base="http://www.saic.com/precis/2009/06/base">SOI-3f9daf44-7f9a-448d-84b8-cde0c6614581</base:Identifier>
+                            <base:Version xmlns:base="http://www.saic.com/precis/2009/06/base">1</base:Version>
+                            <base:Type xmlns:base="http://www.saic.com/precis/2009/06/base">SOI</base:Type>
+                            <base:Checksum xmlns:base="http://www.saic.com/precis/2009/06/base">Tue Jan 08 04:02:15 UTC 2013:1:0:1061172452</base:Checksum>
+                            <base:State xmlns:base="http://www.saic.com/precis/2009/06/base">Active</base:State>
+                        </str:WorkProductIdentification>
+                        <str:WorkProductProperties>
+                            <base:Created xmlns:base="http://www.saic.com/precis/2009/06/base">2013-01-08T04:02:15.819+00:00</base:Created>
+                            <base:CreatedBy xmlns:base="http://www.saic.com/precis/2009/06/base">dipkoe@rs1</base:CreatedBy>
+                            <base:LastUpdated xmlns:base="http://www.saic.com/precis/2009/06/base">2013-01-08T04:02:15.819+00:00</base:LastUpdated>
+                            <base:LastUpdatedBy xmlns:base="http://www.saic.com/precis/2009/06/base">dipkoe@rs1</base:LastUpdatedBy>
+                            <base:Kilobytes xmlns:base="http://www.saic.com/precis/2009/06/base">0</base:Kilobytes>
+                            <base:MimeType xmlns:base="http://www.saic.com/precis/2009/06/base">application/uicds+xml</base:MimeType>
+                            <base:AssociatedGroups xmlns:base="http://www.saic.com/precis/2009/06/base">
+                                <base:Identifier>IG-256bd492-96d1-481e-a450-931f03b6fe4f</base:Identifier>
+                            </base:AssociatedGroups>
+                        </str:WorkProductProperties>
+                    </ulex:PackageMetadata>
+                    <ns:Digest xmlns:ddms="http://metadata.dod.mil/mdr/ns/DDMS/2.0/" xmlns:geo-oasis="urn:oasis:names:tc:emergency:EDXL:HAVE:1.0:geo-oasis" xmlns:gml="http://www.opengis.net/gml" xmlns:have="urn:oasis:names:tc:emergency:EDXL:HAVE:1.0" xmlns:ns="http://ucore.gov/ucore/2.0" xmlns:ns1="http://niem.gov/niem/niem-core/2.0" xmlns:tns="http://uicds.org/SensorService" xmlns:ucoregml="http://www.opengis.net/gml/3.2" xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3">   <ns:Event id="ObservationEvent-w1aa">      <ns:Descriptor/>      <ns:Identifier ns:code="" ns:codespace="" ns:label="Observation">ERNIE</ns:Identifier>      <ns:What ns:code="ObservationEvent" ns:codespace="http://ucore.gov/ucore/2.0/codespace/"/>   </ns:Event>   <ns:Location id="Location-w1aa">      <ns:CyberAddress>         <ddms:virtualCoverage ddms:address="" ddms:protocol="IP"/>      </ns:CyberAddress>      <ns:GeoLocation>         <ns:Point>            <ucoregml:Point ucoregml:id="Point-w1aab3">               <ucoregml:pos srsDimension="2">36.2367968 -115.0622177</ucoregml:pos>            </ucoregml:Point>         </ns:Point>      </ns:GeoLocation>   </ns:Location>   <ns:LocatedAt id="LocatedAt-w1aab3">      <ns:EntityRef ref="ObservationEvent-w1aa"/>      <ns:LocationRef ref="Location-w1aa"/>   </ns:LocatedAt>
+                    </ns:Digest>
+                </str:WorkProduct>
+            </wor:WorkProductPublicationResponse>
+        </sen:CreateSOIResponse>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+
+
+
+
+
+
+
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<wp:ArchiveProductRequest xmlns:precisb="http://www.saic.com/precis/2009/06/base" xmlns:preciss="http://www.saic.com/precis/2009/06/structures" xmlns:wp="http://uicds.org/WorkProductService" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://uicds.org/WorkProductService WorkProductService.xsd">
+			<preciss:WorkProductIdentification>
+				<base:Identifier xmlns:base="http://www.saic.com/precis/2009/06/base">SOI-8daa8ac6-745b-4689-b165-9fbc8c5966ec</base:Identifier>
+            <base:Version xmlns:base="http://www.saic.com/precis/2009/06/base">1</base:Version>
+            <base:Type xmlns:base="http://www.saic.com/precis/2009/06/base">SOI</base:Type>
+            <base:Checksum xmlns:base="http://www.saic.com/precis/2009/06/base">CHECKSUM</base:Checksum>
+            <base:State xmlns:base="http://www.saic.com/precis/2009/06/base">Active</base:State>
+			</preciss:WorkProductIdentification>
+		</wp:ArchiveProductRequest>
+	</soapenv:Body>
+</soapenv:Envelope>
+
+
+

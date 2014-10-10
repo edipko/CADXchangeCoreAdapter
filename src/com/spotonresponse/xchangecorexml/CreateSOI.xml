@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:sen="http://uicds.org/SensorService">
+	<SOAP-ENV:Header />
+	<SOAP-ENV:Body>
+		<sen:CreateSOIRequest>
+			<sen:incidentID>%s</sen:incidentID>
+			<sen:SensorObservationInfo>
+				<sen:sosURN>%s</sen:sosURN>
+				<sen:SensorInfo>
+					<sen:description>%s</sen:description>
+					<sen:name>%s</sen:name>
+					<sen:latitude>%s</sen:latitude>
+					<sen:longitude>%s</sen:longitude>
+				</sen:SensorInfo>
+			</sen:SensorObservationInfo>
+		</sen:CreateSOIRequest>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

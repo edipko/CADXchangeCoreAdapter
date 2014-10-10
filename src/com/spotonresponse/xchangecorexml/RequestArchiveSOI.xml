@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header />
+	<soapenv:Body>
+		<wp:ArchiveProductRequest
+			xsi:schemaLocation="http://uicds.org/WorkProductService WorkProductService.xsd"
+			xmlns:wp="http://uicds.org/WorkProductService" xmlns:precisb="http://www.saic.com/precis/2009/06/base"
+			xmlns:preciss="http://www.saic.com/precis/2009/06/structures"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<preciss:WorkProductIdentification>
+				<base:Identifier xmlns:base="http://www.saic.com/precis/2009/06/base">SOI</base:Identifier>
+            <base:Version xmlns:base="http://www.saic.com/precis/2009/06/base">1</base:Version>
+            <base:Type xmlns:base="http://www.saic.com/precis/2009/06/base">SOI</base:Type>
+            <base:Checksum xmlns:base="http://www.saic.com/precis/2009/06/base">CHECKSUM</base:Checksum>
+            <base:State xmlns:base="http://www.saic.com/precis/2009/06/base">Active</base:State>
+			</preciss:WorkProductIdentification>
+		</wp:ArchiveProductRequest>
+	</soapenv:Body>
+</soapenv:Envelope>

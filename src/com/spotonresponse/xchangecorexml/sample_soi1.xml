@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkProduct>
+	<ulex:PackageMetadata>
+		<ulex:DataItemID>SOI-3ce9ef3a-787f-4774-b581-134549a455aa</ulex:DataItemID>
+		<ulex:DataItemReferenceID>SOI-3ce9ef3a-787f-4774-b581-134549a455aa</ulex:DataItemReferenceID>
+		<ns:DataItemStatus ns:code="Active"
+			ns:codespace="http://uicds.org/1.0/codespace/workproduct/status"
+			ns:label="UICDS Work Product Status" />
+		<ulex:DataOwnerMetadata>
+			<ns:DataOwnerIdentifier>
+				<ns1:Organization>
+					<ns1:name>ucids.org</ns1:name>
+				</ns1:Organization>
+			</ns:DataOwnerIdentifier>
+			<ns:DataOwnerContact>
+				<ns1:Organization>
+					<ns1:name>http://uicds.us</ns1:name>
+				</ns1:Organization>
+			</ns:DataOwnerContact>
+			<ulex:DataOwnerMetadataDomainAttribute>
+				<ulex:DomainName>UICDS EM Domain</ulex:DomainName>
+			</ulex:DataOwnerMetadataDomainAttribute>
+		</ulex:DataOwnerMetadata>
+		<ns:DisseminationCriteria />
+		<WorkProductIdentification>
+			<base:Identifier>SOI-3ce9ef3a-787f-4774-b581-134549a455aa</base:Identifier>
+			<base:Version>1</base:Version>
+			<base:Type>SOI</base:Type>
+			<base:Checksum>Tue May 14 13:07:36 EDT 2013:1:1:290322100</base:Checksum>
+			<base:State>Active</base:State>
+		</WorkProductIdentification>
+		<WorkProductProperties>
+			<base:Created>2013-05-14T13:07:36.133-04:00</base:Created>
+			<base:CreatedBy>json@uicds-host3.saic.com</base:CreatedBy>
+			<base:LastUpdated>2013-05-14T13:07:36.133-04:00</base:LastUpdated>
+			<base:LastUpdatedBy>json@uicds-host3.saic.com</base:LastUpdatedBy>
+			<base:Kilobytes>1</base:Kilobytes>
+			<base:MimeType>application/uicds+xml</base:MimeType>
+			<base:AssociatedGroups>
+				<base:Identifier>IG-85cf8a1a-2fb1-4f43-8487-c89e936d8fd8</base:Identifier>
+			</base:AssociatedGroups>
+		</WorkProductProperties>
+	</ulex:PackageMetadata>
+	<ns:Digest>
+		<ns:Event id="ObservationEvent-w1aa">
+			<ns:Descriptor>
+				<br />
+				<b>Form:</b>
+				Buildings
+				<br />
+				<b>Recorded:</b>
+				2013-05-14 00:21:54 UTC
+				<br />
+				<b>Synced:</b>
+				<br />
+				<b>Operator:</b>
+				chris@eeri.org
+				<br />
+				<b>Site:</b>
+				downtown berkely bart
+				<br />
+				<b>Photo:</b>
+				1368490913303.jpg
+				<br />
+				<b>Type:</b>
+				Unknown
+				<br />
+				<b>Use:</b>
+				Commercial
+				<br />
+				<b>Stories:</b>
+				13.0
+				<br />
+				<b>Damage:</b>
+				Slight
+				<br />
+				<b>Investigation:</b>
+				yes
+				<br />
+				<b>Notes:</b>
+				This is a test.
+				<br />
+				<b>Location Description:</b>
+				Wells Fargo building
+				<br />
+				<b>Accuracy:</b>
+				5.00
+				<br />
+			</ns:Descriptor>
+			<ns:Identifier ns:code="" ns:codespace="" ns:label="Observation">Buildings</ns:Identifier>
+			<ns:What ns:code="ObservationEvent" ns:codespace="http://ucore.gov/ucore/2.0/codespace/" />
+		</ns:Event>
+		<ns:Location id="Location-w1aa">
+			<ns:CyberAddress>
+				<ddms:virtualCoverage ddms:address="http://uicds.us/SensorService"
+					ddms:protocol="IP" />
+			</ns:CyberAddress>
+			<ns:GeoLocation>
+				<ns:Point>
+					<ucoregml:Point ucoregml:id="Point-w1aab3">
+						<ucoregml:pos srsDimension="2">37.87025 -122.26824</ucoregml:pos>
+					</ucoregml:Point>
+				</ns:Point>
+			</ns:GeoLocation>
+		</ns:Location>
+		<ns:LocatedAt id="LocatedAt-w1aab3">
+			<ns:EntityRef ref="ObservationEvent-w1aa" />
+			<ns:LocationRef ref="Location-w1aa" />
+		</ns:LocatedAt>
+	</ns:Digest>
+</WorkProduct>

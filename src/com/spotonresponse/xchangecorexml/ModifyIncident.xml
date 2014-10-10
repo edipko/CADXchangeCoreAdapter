@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP-ENV:Header />
+	<SOAP-ENV:Body>
+		<ims:UpdateIncidentRequest
+			xmlns:ims="http://uicds.org/IncidentManagementService" xmlns:inc="http://uicds.org/incident"
+			xmlns:nc="http://niem.gov/niem/niem-core/2.0" xmlns:nga="http://niem.gov/niem/nga/2.0"
+			xmlns:niem-xsd="http://niem.gov/niem/proxy/xsd/2.0" xmlns:p="urn:oasis:names:tc:emergency:EDXL:DE:1.0"
+			xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:unece="http://niem.gov/niem/unece_rec20-misc/2.0"
+			xmlns:str="http://www.saic.com/precis/2009/06/structures" xmlns:base="http://www.saic.com/precis/2009/06/base">
+			<str:WorkProductIdentification>
+				<base:Identifier>{WPID}</base:Identifier>
+				<base:Version>{VERSION}</base:Version>
+				<base:Type>{TYPE}</base:Type>
+				<base:Checksum>{CHECKSUM}</base:Checksum>
+				<base:State>Active</base:State>
+			</str:WorkProductIdentification>
+			<inc:Incident>
+				<nc:ActivityCategoryText>{CATEGORY}</nc:ActivityCategoryText>
+				<nc:ActivityDate>
+					<nc:DateTime>{DATETIME}</nc:DateTime>
+				</nc:ActivityDate>
+				<nc:ActivityDescriptionText>{DESCRIPTOR}
+				</nc:ActivityDescriptionText>
+				<nc:ActivityName>{NAME}</nc:ActivityName>
+				<nc:IncidentLocation>
+					<nc:LocationAddress>
+						<nc:AddressFullText>{ADDRESS}</nc:AddressFullText>
+					</nc:LocationAddress>
+					<nc:LocationArea>
+						<nc:AreaCircularRegion>
+							<nc:CircularRegionCenterCoordinate>
+								<nc:GeographicCoordinateLatitude>
+									<nc:LatitudeDegreeValue>{LATDEG}</nc:LatitudeDegreeValue>
+									<nc:LatitudeMinuteValue>{LATMIN}</nc:LatitudeMinuteValue>
+									<nc:LatitudeSecondValue>{LATSEC}</nc:LatitudeSecondValue>
+								</nc:GeographicCoordinateLatitude>
+								<nc:GeographicCoordinateLongitude>
+									<nc:LongitudeDegreeValue>{LONDEG}</nc:LongitudeDegreeValue>
+									<nc:LongitudeMinuteValue>{LONMIN}</nc:LongitudeMinuteValue>
+									<nc:LongitudeSecondValue>{LONSEC}</nc:LongitudeSecondValue>
+								</nc:GeographicCoordinateLongitude>
+							</nc:CircularRegionCenterCoordinate>
+							<nc:CircularRegionRadiusLengthMeasure>
+								<nc:MeasurePointValue>1.0</nc:MeasurePointValue>
+								<nc:LengthUnitCode>SMI</nc:LengthUnitCode>
+							</nc:CircularRegionRadiusLengthMeasure>
+						</nc:AreaCircularRegion>
+					</nc:LocationArea>
+				</nc:IncidentLocation>
+			</inc:Incident>
+		</ims:UpdateIncidentRequest>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
